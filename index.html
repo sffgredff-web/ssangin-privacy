@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>쌍인 개인정보 처리방침</title>
+<meta name="description" content="쌍인 앱의 개인정보 처리방침">
+<style>
+:root{--bg:#FBF8F3;--card:#fff;--ink:#1F1B16;--ink2:#5A5148;--line:#E7DFD3;--seal:#C2361F}
+@media (prefers-color-scheme:dark){:root{--bg:#16130F;--card:#211D18;--ink:#F2ECE3;--ink2:#B8AEA2;--line:#3A332B;--seal:#E2654F}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;word-break:keep-all}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+.mark{width:44px;height:44px;border-radius:10px;background:var(--seal);color:#fff;display:grid;place-items:center;font-weight:900;font-size:20px;font-family:serif;flex:none}
+h1{font-size:24px;margin:0;line-height:1.3}
+h2{font-size:18px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+p,li{color:var(--ink)}
+ul{padding-left:20px}
+.tbl{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{color:var(--ink2);font-weight:600}
+a{color:var(--seal);word-break:break-all}
+footer{margin-top:40px;color:var(--ink2);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<header><div class="mark">印</div><h1>개인정보 처리방침 — 쌍인</h1></header>
+<p>시행일: 2026-10-17</p>
+<p>쌍인(이하 "앱")은 문서에 서명·도장을 넣는 앱입니다. <strong>운영자는 이용자의 개인정보를 수집하거나 서버로 전송하지 않습니다.</strong> 앱은 인터넷 권한(INTERNET)을 요청하지 않으며, 모든 처리는 이용자의 휴대폰 안에서만 이루어집니다.</p>
+<h2>앱이 기기 안에 저장하는 정보</h2>
+<div class="tbl"><table><thead><tr><th>정보</th><th>용도</th><th>저장 위치</th></tr></thead><tbody><tr><td>직접 그린 서명, 만든·가져온 도장 이미지</td><td>문서에 찍기</td><td>앱 내부 저장소</td></tr><tr><td>찍은 기록 (문서 이름, 문서번호, 저장 날짜·형식, 사용한 도장 작은 그림)</td><td>이용자가 확인하는 사용 내역. 설정에서 끄거나 지울 수 있음. 문서 내용은 기록하지 않음</td><td>앱 내부 저장소</td></tr><tr><td>디지털 서명용 키와 인증서</td><td>PDF 디지털 서명. 키는 기기의 보안 영역(Android Keystore)에 있으며 앱 밖으로 꺼낼 수 없음. 사용할 때마다 지문·얼굴·화면 잠금 인증을 요구함</td><td>Android Keystore / 앱 내부 저장소</td></tr></tbody></table></div>
+<ul><li>위 정보는 앱 내부 저장소에만 있어 다른 앱이 읽을 수 없고, 클라우드 백업(allowBackup=false)에도 포함되지 않습니다.</li><li>앱을 삭제하면 위 정보도 함께 삭제됩니다.</li><li>사진 문서나 카메라 촬영 사진(도장 사진 가져오기)은 이용자가 직접 선택하거나 촬영한 경우에만 앱이 읽으며, 원본 파일은 수정하지 않습니다.</li></ul>
+<h2>임시 문서와 보관</h2>
+<ul><li>문서를 열거나 변환할 때 원본·복호화 사본·미리보기 파일이 앱 캐시에 만들어집니다. 정상적으로 문서를 닫으면 해당 작업 파일을 삭제합니다.</li><li>비정상 종료 후 남은 작업 파일과 공유용 사본은 다음 앱 시작 시 24시간이 지난 파일부터 정리합니다. 저장 공간 관리에서 앱 데이터를 삭제하면 내부 저장 정보도 제거됩니다.</li><li>이용자가 직접 외부 폴더에 저장하거나 공유한 파일은 앱 삭제로 지워지지 않습니다.</li></ul>
+<h2>앱이 요청하는 권한</h2>
+<ul><li>생체 인증(USE_BIOMETRIC·USE_FINGERPRINT): 디지털 서명을 쓸 때 본인 확인 창을 띄우는 데만 사용합니다. 지문·얼굴 정보는 앱이 받지 못하고, 기기가 인증 성공 여부만 알려 줍니다.</li><li>그 밖의 권한(인터넷, 저장소, 연락처, 위치 등)은 요청하지 않습니다.</li></ul>
+<h2>이용자가 직접 내보내는 파일</h2>
+<ul><li>저장한 문서(PDF·이미지·한글 파일)와 "찍은 기록 내보내기" 파일(.json)은 이용자가 고른 위치에 저장됩니다. 이 파일에는 문서 이름·문서번호가 포함되므로 보관과 공유는 이용자가 직접 관리합니다.</li></ul>
+<h2>제3자 제공·광고·분석</h2>
+<ul><li>광고·분석·개인정보 수집 SDK를 사용하지 않습니다. 문서 처리와 화면 구현을 위한 오픈소스 라이브러리를 사용하며, 목록은 앱의 오픈소스 라이선스 화면에서 확인할 수 있습니다. 개인정보를 제3자에게 제공하지 않습니다.</li></ul>
+<h2>문의</h2>
+<ul><li>GitHub: <a href="https://github.com/sffgredff-web/ssangin-privacy/issues">https://github.com/sffgredff-web/ssangin-privacy/issues</a></li><li>개인정보 문의 및 삭제 관련 요청: 위 GitHub Issues에서 접수합니다. 공개 게시물이므로 문서·서명 이미지·개인정보는 첨부하지 마세요.</li></ul>
+<p>방침이 바뀌면 이 문서를 갱신하고 시행일을 고칩니다.</p>
+<footer>쌍인 — 디지털 도장을 실물 도장으로</footer>
+</main>
+</body>
+</html>
